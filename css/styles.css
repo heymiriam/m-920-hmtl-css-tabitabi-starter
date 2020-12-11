@@ -109,6 +109,7 @@ p {
   }
   h2 {
     font-size: 2.5rem;
+    text-transform:uppercase;
   }
   h3 {
     font-size: 1.75rem;
@@ -146,6 +147,8 @@ p {
   color: var(--clr-primary-1);
   background: var(--clr-primary-8);
 }
+
+h2
 
 /*
 =============== 
@@ -261,23 +264,220 @@ Navbar
 Hero
 ===============
 */
+.hero{
+  background-image: url(../images/main.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:1000px;
+  display:flex;
+  align-items:center;
+  align-content:center;
+  flex-flow:column nowrap;
+  justify-content:center;
+  
+}
+
+.hero h1, .hero p{
+  color:white;
+  text-align:center;
+  align-self:center;
+}
+.hero h1{
+  text-transform:uppercase;
+  font-weight:400;
+  margin-bottom:21px;
+}
+
+.hero p{
+  line-height: 24px;
+  letter-spacing:4px;
+}
+
+.button{
+  font-weight:400px;
+  text-transform:uppercase;
+  margin-top:18px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 0px;
+  height: 63px;
+  left: 0%;
+  right: 0%;
+  top: 0px;
+}
+
+.button p{
+  color:#2CAEBA;
+  margin:auto;
+  padding: 20px 20px;
+}
+
 /*
 =============== 
 About
 ===============
 */
+
+
+.about h2{
+  margin-top:76px;
+  text-transform: uppercase;
+  font-weight:400;
+  text-align:center;
+}
+
+.about h2 span{
+  color:#2CAEBA;
+}
+
+.about-cont{
+  display:flex;
+  justify-content:flex-start;
+  align-items:flex-start;
+  
+}
+
+.about img{
+  align-self:center;
+  width:40%;
+  margin-left:2%;
+  margin-top:68px;
+  margin-bottom:80.3px;
+}
+.about1{
+  align-self:center;
+  width:50%;
+  margin-left:64px;
+}
+
+.about1 h4{
+  font-weight:400;
+  font-size:28px;
+  letter-spacing:4px;
+  margin-bottom:17px;
+}
+
+.about1 p:nth-child(2){
+  margin-top:20px;
+}
+
+.about1 p{
+  line-height:24px;
+  color:#617D98;
+}
 /*
 =============== 
 Services
 ===============
 */
+  .services{
+    background-color:#F1F5F8;
+  }
+  .services h3{
+    text-align:center;
+    font-weight:400;
+    font-size:40px;
+    text-transform: uppercase;
+    padding-top:76px;
+  }
+  .services h3 span{
+    color:#2CAEBA;
+  }
 
+  .services-cont{
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    margin-top:68px;
+    
+    
+  }
+
+  .services-cont i{
+    background-color:#2CAEBA;
+    padding:20px 13px;
+    font-size:20px;
+  }
+
+  .services-cont h4{
+    font-size:16px;
+    letter-spacing:4px;
+    color:#102A42;
+    margin-bottom:12px;
+    
+  }
+
+  .service1{
+    margin-left:30px;
+  }
+  .service2{
+    margin-left:44px;
+  }
+  .service3{
+    margin-left:44px;
+    
+  }
+
+  .services-cont div{
+    display:flex;
+    align-items: flex-start;
+    flex-direction:row;
+
+  }
+
+  .ser div{
+    flex-direction:column;
+    margin-left:16px;
+  }
+  .ser p{
+    font-size:15px;
+    color:#617D98;
+    width:80%;
+  }
+
+  .ser{
+    align-self:center;
+    margin-bottom:98.03px;
+  }
 /*
 =============== 
 Featured Tours
 ===============
 */
+.tours{
+  display:flex;
+}
+.heading-f{
+  font-size:40px;
+  font-weight:400;
+  text-transform: uppercase;
+  text-align:center;
+  color:#102A42;
+  margin-top:75.97px;
+  margin-bottom:60px;
+}
+.heading-f span{
+  color:#2CAEBA;
+}
+.featured img{
+  width:100%;
+}
+.featured p:nth(1){
+  position:relative;
+  padding:16px 10px;
+  background-color:#88EBF2;
+}
 
+.tours{
+  display:flex;
+  align-items: flex-start;
+  flex-direction:row;
+
+}
+.tour{
+  width:348px;
+  margin-left:30px;
+}
 /*
 =============== 
 Contact
